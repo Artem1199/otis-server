@@ -21,7 +21,7 @@ Display live graph of incoming Arduino data, allows the ability to save data, an
 Reference this [Ubuntu Tutorial](https://ubuntu.com/tutorials/install-and-configure-apache#1-overview) for more info.
 
 
-I"ve bought and domain and I'm occasionally hosting this website at: http://otisdata.xyz/live.php
+I've bought and domain and I'm occasionally hosting this website at: http://otisdata.xyz/live.php
 
 
 
