@@ -5,7 +5,7 @@ Display live graph of incoming Arduino data, allows the ability to save data, an
 1. requires dhp.php for mysql connection, not uploaded
 2. used with apache2 server
 
-#Setting up Apache2 Server
+## Setting up Apache2 Server
 1. Install Apache2 `sudo apt update  && sudo apt install apache2`
 2. Make a folder to this website in `/var/www/FOLDERNAME` (FOLDERNAME is whatever you want it to be)
 3. Copy the contents of this repo to `/var/www/FOLDERNAME` i.e. `sudo cp -a /home/USERNAME/Desktop/Git/otis-Server/. /var/www/otis/`
