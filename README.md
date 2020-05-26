@@ -1,8 +1,8 @@
 # otis-server
 
-Display live graph of incoming Arduino data, allows the ability to save data, and view history.  For use with otis-tcp, and otis-arduino.
+Display live graph of incoming Arduino data, allows the ability to save data, and view history.  For use with [otis-tcp](https://github.com/Artem1199/otis-tcp/), and [otis-arduino](https://github.com/Artem1199/otis-arduino).
 
-1. requires dhp.php for mysql connection, not uploaded
+1. requires dhp.php defaults changed for mysql connection
 2. used with apache2 server
 
 ## Setting up Apache2 Server
