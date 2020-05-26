@@ -23,14 +23,14 @@ var PITCHchart = new CanvasJS.Chart("chartContainer", {
 	animationEnabled: true,
 	zoomEnabled: true,
 	title :{
-		text: "PITCH"
+		text: "PITCH ERROR"
 	},
 	axisY: {
-		minimum: -1.65,
-		maximum: 1.65,
+		minimum: -10,
+		maximum: 10,
 		includeZero: true,
 		stripLines: [{
-			value: -0.05,
+			value: -0.00,
 			label: "Set Point"
 		}]
 
@@ -48,11 +48,11 @@ var YAWchart = new CanvasJS.Chart("chartContainer2", {
 	animationEnabled: true,
 	zoomEnabled: true,
 	title :{
-		text: "YAW"
+		text: "YAW ERROR"
 	},
 	axisY: {
-		minimum: -3.14,
-		maximum: 3.14,
+		minimum: -10,
+		maximum: 10,
 		includeZero: true
 	},      
 	data: [{
@@ -68,8 +68,8 @@ var YAWchart = new CanvasJS.Chart("chartContainer2", {
 
 
 var xVal = 0;
-var updateInterval = 70;
-var dataLength = 500; // number of dataPoints visible at any point
+var updateInterval = .01;
+var dataLength = 100; // number of dataPoints visible at any point
 
 var updateChart = function (count) {
 
@@ -80,7 +80,7 @@ var updateChart = function (count) {
 		//console.log(data);
 			PITCHdps.push({x: xVal, y: data[0].PITCH});
 			YAWdps.push({x: xVal, y: data[0].YAW});
-			YAWchart.options.data[0].legendText = " YA YA YA " + data[0].YAW; 
+			YAWchart.options.data[0].legendText = " YAW " + data[0].YAW; 
 			PITCHchart.options.data[0].legendText = " PITCH " + data[0].PITCH; 
 	});
 
@@ -143,7 +143,7 @@ setInterval(function(){updateChart()}, updateInterval);
 					$result = $conn->query("SHOW TABLES LIKE '20%'");
 
 					if($result->num_rows > 0) {
-					// echo '<select name="dropdown"/>';
+					 //echo '<select name="dropdown"/>';
 						while($row = $result->fetch_array(MYSQLI_NUM)) {
 							echo '<option>' . $row[0] . '</option>';
 						}

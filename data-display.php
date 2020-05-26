@@ -130,8 +130,8 @@
           labelFontColor: "white",
          },
          axisY: {
-              minimum: -3.14,
-              maximum: 3.14,
+              minimum: -.3,
+              maximum: .3,
               includeZero: true,
               labelFontColor: "white",
             	  },  
@@ -172,8 +172,8 @@
           labelFontColor: "white",
          },
          axisY: {
-		    minimum: -1000,
-		    maximum: 1000,
+		    minimum: -255,
+		    maximum: 255,
         labelFontColor: "white",
 		    includeZero: true
             	},  
